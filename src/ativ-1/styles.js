@@ -7,21 +7,18 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         backgroundColor: '#E3F2FD',
         padding: 8,
-        
     },  
-    paragraph: {
-        margin: 24,
-        fontSize: 18,
+    titulo: {
+        margin: 34,
         fontWeight: 'bold',
+        fontSize: 18,
         textAlign: 'center',
         color: '#1565C0', 
     },
-    
-        Image:{
-            width: '90%',
-            height: '15%',
-            margin: 10,
-    }
+    Image:{
+        resizeMode: 'center',
+    },
+
 });
 
 export default styles;

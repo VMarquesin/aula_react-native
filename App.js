@@ -17,8 +17,8 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#90CAF9',
-    alignItems: 'center',
+    // alignItems: 'center',
     justifyContent: 'center',
-    padding: 8,
+    padding: 10,
   },
 });
