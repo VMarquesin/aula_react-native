@@ -11,7 +11,7 @@ const styles = StyleSheet.create({
     titulo: {
         margin: 34,
         fontWeight: 'bold',
-        fontSize: 18,
+        fontSize: 25,
         textAlign: 'center',
         color: '#1565C0', 
     },

@@ -1,6 +1,6 @@
 import { View, Text, Image } from 'react-native';
 
-import ola from './ola';
+import Ola from './ola/index';
 
 import styles from './styles';
 
@@ -21,7 +21,15 @@ export default function Atividade1 () {
             <Text style={styles.titulo}>
             <Image source={logo} style={styles.Image}/>
                 Atividade 1
-            </Text>            
+            </Text>  
+            <Ola nomepessoa={'Mario'}/>  
+            <Ola nomepessoa={'Bruna'}/>  
+            <Ola nomepessoa={'Maria'}/>  
+            <Ola nomepessoa={'João'}/>  
+            <Ola nomepessoa={'Cleber'}/>          
+
+
+            {/* <ola>Mario</ola> */}
         </View>
     );
 }

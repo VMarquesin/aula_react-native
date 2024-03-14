@@ -2,8 +2,11 @@ import { StyleSheet } from 'react-native';
 
 
 const styles = StyleSheet.create({
-interacao:{
+txtola:{
     textAlign: 'center',
+    fontSize: 20,
+    color: 'blue',
+    marginTop: 10,
 },
 });
 
