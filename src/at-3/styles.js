@@ -13,29 +13,27 @@ const styles = StyleSheet.create({
     titulo: {
         fontSize: 30,
         fontWeight: 'bold',
-        marginBottom: 20,
         padding: 10,
 
     },
     botao: {
-        width: '60%',
+        width: '80%',
+        margin: 20,
         borderRadius: 20,
         padding: 10,
-        mardin: 20,
         backgroundColor: 'black',
         alignItems: 'center',
         justifyContent: 'center',
         
     },
     borda: {
-        marginTop: 20,
-       padding: 20,
+        padding: 10,
         border: 1,   
         alignItems: 'center',
         justifyContent: 'center',
         border: 10,
         border: 'solid',
-        width: '50%',
+        width: '70%',
 
     },
     linha:{
@@ -48,6 +46,12 @@ const styles = StyleSheet.create({
     txtbotao: {
         fontSize: 25,
         color: '#fafafa',
+        textAlign: 'center',
+    },
+    botaocontainer: {
+        width: '30%',
+        margin: 20,
+        
     },
    
 });
