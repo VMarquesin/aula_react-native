@@ -1,4 +1,4 @@
-import { View, Touchable, Text, TextInput } from "react-native";
+import { View, Text, TextInput, Pressable } from "react-native";
 import { useState } from "react";
 import styles from "./styles";
 
@@ -18,7 +18,7 @@ function soma(){
 
     return(
     
-    <view style={styles.container}>
+    <View style={styles.container}>
         <text style={styles.titulo}>Exemplo_5</text>
 
         <Text style={styles.txtSaida}>Calculadora Básica</Text>
@@ -28,7 +28,7 @@ function soma(){
         style={
                 [
                     styles.txtEntrada,
-                    inFocusN1 ?
+                    isFocusN1 ?
                         {
                             borderColor: '#C51162',
                             outline: 'none',
@@ -39,7 +39,7 @@ function soma(){
             }
             onFocus={() => setIsFocusN1(true)}
             onBlur={() => setIsFocusN1(false)}
-            onChangeText={(num2) => setN2(num2)}
+            onChangeText={(num1) => setN1(num1)}
             value={n1}
         />
 
@@ -52,7 +52,7 @@ function soma(){
         style={
                 [
                     styles.txtEntrada,
-                    inFocusN2 ?
+                    isFocusN2 ?
                         {
                             borderColor: '#C51162',
                             outline: 'none',
@@ -91,6 +91,19 @@ function soma(){
         value={total ? parseFloat(total).toFixed(2) : ''}
         />
 
-    </view>
+        <Pressable
+        onPress={() => soma()}
+        style={
+            ({pressed}) => pressed ?
+                [styles.button, styles.buttonTouch]
+            :
+                styles.button
+
+        }
+
+        >
+            <Text style={styles.textButton}> + </Text>
+        </Pressable>
+    </View>
     );
 }
