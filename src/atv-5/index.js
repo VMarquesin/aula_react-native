@@ -9,8 +9,8 @@ export default function Atividade_5 (){
     const [isFocusTotal, setIsFocusTotal] = useState(false);
     const [n1, setN1] = useState(0);
     const [n2, setN2] = useState(0);
-    const [total, setTotal] = useState('0');
-    const [sinal, setsinal] = useState('')
+    const [total, setTotal] = useState(0);
+    const [sinal, setsinal] = useState('Operação');
     
 function soma(){
     setTotal(parseFloat(n1) + parseFloat(n2))
@@ -54,6 +54,8 @@ function divisao(){
             }
             onFocus={() => setIsFocusN1(true) [(`${n1}`)(setN1(''))] }
             onBlur={() => setIsFocusN1(false)}
+
+            
             onChangeText={(num1) => setN1(num1)}
             value={n1}
         />
@@ -103,7 +105,7 @@ function divisao(){
         onFocus={() => setIsFocusTotal(true)}
         onBlur={() => setIsFocusTotal(false)}
         editable={false}
-        value={total ? parseFloat(total).toFixed(2) : ''}
+        value={total ? parseFloat(total).toFixed(2) : '0.00'}
         />
 
         <View style={styles.linha}>
@@ -175,7 +177,7 @@ function divisao(){
         }
 
         >
-            <Text style={styles.textButton}> Zerar </Text>
+            <Text style={styles.textButton}> Limpar </Text>
         </Pressable>
 
         
