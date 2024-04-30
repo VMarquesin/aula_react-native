@@ -15,6 +15,9 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         color: '#aaa',
     },
+    ladolado: {
+        flexDirection: 'row',
+    },
 });
 
 export default styles;
