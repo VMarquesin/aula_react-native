@@ -5,6 +5,8 @@ const styles = StyleSheet.create({
         backgroundColor: '#89ffa5',
         width: '95%',
         borderRadius: 20,
+        marginTop: 20,
+        
     },
 
     txtBotao:{

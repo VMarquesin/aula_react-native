@@ -9,7 +9,7 @@ export default function Input({placeholder, valor, atualizaValor}){
             placeholder={placeholder}
             placeholderTextColor='lightgray'
             keyboardType='numeric'
-            value={valor}
+            value={valor }
             onChangeText={vlr => atualizaValor(vlr)}
             
             
