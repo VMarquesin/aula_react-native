@@ -15,6 +15,15 @@ export default function Exemplos({ navigation }) {
          <Pressable onPress={() => navigation.navigate("Ex5")}>
             <Text>Exemplo 5</Text>
          </Pressable>
+         <Pressable onPress={() => navigation.navigate("Ex6")}>
+            <Text>Exemplo 6</Text>
+         </Pressable>
+         <Pressable onPress={() => navigation.navigate("Ex7")}>
+            <Text>Exemplo 7</Text>
+         </Pressable>
+         <Pressable onPress={() => navigation.navigate("Ex8")}>
+            <Text>Exemplo 8</Text>
+         </Pressable>
       </View>
    );
 }
