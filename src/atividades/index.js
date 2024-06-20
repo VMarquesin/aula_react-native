@@ -9,15 +9,10 @@ export default function Atividades({ navigation }) {
             <Pressable onPress={() => navigation.navigate('At3')}>
                 <Text>Atividade 3</Text>
             </Pressable>
-            <Pressable onPress={() => navigation.navigate('Atv4')}>
-                <Text>Atividade 4</Text>
-            </Pressable>
             <Pressable onPress={() => navigation.navigate('Atv-5')}>
                 <Text>Atividade 5</Text>
             </Pressable>
-            <Pressable onPress={() => navigation.navigate('Atv6')}>
-                <Text>Atividade 6</Text>
-            </Pressable>
+            
         </View>
     );
 }
